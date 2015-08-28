@@ -3,4 +3,4 @@
 two sum两种标准解法：
 
 1. 数组排序。两个指针一头一尾，求和比较。 main4.cpp(O(nlogn))
-2. 用hashmap判断另一个数在不在集合内。 main2.cpp(map, O(nlogn)), main3.cpp(unordered_map, 接近O(n))
+2. 用hashmap判断另一个数在不在集合内。 main2.cpp(map, O(nlogn)), main3.cpp(unordered_map, 接近O(n)), main.py
