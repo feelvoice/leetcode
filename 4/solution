@@ -1,0 +1,21 @@
+思路略飘逸, 找合并数组的第k位数。。。
+
+pa + pb = k
+
+比较a[pa-1] 和 b[pb-1]; （pa个和pb个，一共k个）
+如果a[pa-1] < b[pb-1], 则a[0]到a[pa-1]全部在合并后的数组的前k-1个, 换句话说：a[pa-1]不可能是合并后的第k位, 所以我们可以将a[pa-1]前面抛弃。。。
+
+（反证法）
+
+证明：假如a[pa-1]是合并后的第k位以后，则其至少为第k位。
+实际上在a中至多只有pa-1个数小于等于a[pa-1]， b中至多只有pb-1个数小于等于a[pa-1]。(因为b中至多只有pb-1个数小于等于b[pb-1] && a[pa-1] < b[pb-1])
+故最多只有pa - 1 + pb - 1 = k-2个数小于等于a[pa-1]， 即最多为k+1位。
+
+矛盾。。 得证。
+
+if a[pa-1] < b[pb-1]:
+    return find_kth(nums1[pa:], nums2, k-pa)
+elif a[pa-1] > b[pb-1]:
+    return find_kth(nums1, nums2[pb:], k-pb)
+else:
+    return a[pa-1]
