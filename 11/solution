@@ -1,0 +1,4 @@
+给定a1, a2, a3, ... ai, 求max( min(ai, aj) * abs(i - j) )
+
+头尾遍历a, 计算min(ai, aj) * abs(i - j)
+每次短板移动。(长板再移动也不可能比当前大了)
