@@ -1,0 +1,5 @@
+next_permutation..
+
+倒序找一个逆序对， mark小的为i, i之后找一个第一个比他大的，swap. reverse后面的全部。
+
+可以直接使用stl库- -
