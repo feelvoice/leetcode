@@ -1,0 +1,3 @@
+滑动窗口，双指针交替移动。
+
+注意子串包含的判断，使用一个当前的窗口大小count~ O(1)判断~ pay attention to this one
