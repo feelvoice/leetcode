@@ -1,0 +1,6 @@
+trick..
+
+use xor to calculate x_or = a ^ b
+use lowbit = x_or & -x_or to calculate a 1's bit
+use lowbit to partition arr...
+
