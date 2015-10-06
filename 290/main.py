@@ -12,12 +12,12 @@ class Solution(object):
         m = {}
         revm = {}
         
-        for i, p in enumerate(pattern):
+        for s, p in zip(str, pattern):
             if p not in m:
-                if str[i] in revm: return False
-                m[p] = str[i]
-                revm[str[i]] = p
+                if s in revm: return False
+                m[p] = s
+                revm[s] = p
             else:
-                if m[p] != str[i]: return False
+                if m[p] != s: return False
                          
         return True
